@@ -1,0 +1,38 @@
+.title{
+    background-color: aqua;
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+    font-weight: Bold;
+    padding: 15px 20px;
+}
+
+a.nav-link:hover{
+    background-color: turquoise;
+}
+
+.background{
+    background-color: rgb(241, 243, 245)
+}
+
+.mainbody{
+    padding-top: 20px;
+    background-color: white
+}
+
+.image{
+    max-width:50%;
+    background: white;
+    border: 1px solid aqua transparent;
+    height:auto;
+}
+
+.image:hover{
+    background: aqua;
+    outline: 3px solid aqua;
+}
+
+h1{
+    color: aqua;
+    font-weight: Bold;
+}
