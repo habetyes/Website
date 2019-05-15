@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Wind Speed Dashboard</title>
+  <title>Weather Dashboard</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -55,11 +55,15 @@
     <div class="row">
       <div class="col-lg-8 col-md-12">
         <div class="section">
-          <h1>Summary: Latitude vs. Wind Speed</h1>
+          <h1>Summary: Latitude vs. X</h1>
           <hr>
-          <img class="plot-image" src="../Resources/assets/images/Fig4.png" alt="Wind Speed">
-          <p>Latitude seems to have minimal effect on wind speed. Of the cities measured, there was a larger
-             concentration of outlier cities with wind speeds above 20MPH as we move further from the equator
+          <img class="float-left body-image" src="Resources/assets/images/Fig1.png" alt="Max_Temp">
+          <p>The purpose of this project was to analyze the effect that latiutude had on weather. To accomplish this task
+            I leveraged the OpenWeatherMap API to acquire a dataset containing 500 cities. 
+          </p>
+          <p>After assembling the dataset, I used Matplotlib to plot various aspects of the weather vs latutude. Factors looked at include:
+            Temperature, Cloudiness, Wind Speed and Humidity. This site provides the source data and visualizations created as part of the analysis, 
+            as well as explanations and descriptions of any trends and correlations witnessed.
           </p>
         </div>
       </div>
@@ -73,24 +77,24 @@
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-md-6 col-sm-3">
                 <a class="image" href="tempurature.html">
-                  <img class="image" src="../Resources/assets/images/Fig1.png" alt="Max_Temp">
+                  <img class="image" src="Resources/assets/images/Fig1.png" alt="Max_Temp">
                 </a>
               </div>
               <div class="col-md-6 col-sm-3">
                 <a class="image" href="humidity.html">
-                  <img class="image" src="../Resources/assets/images/Fig2.png" alt="Humidity">
+                  <img class="image" src="Resources/assets/images/Fig2.png" alt="Humidity">
                 </a>
               </div>
             </div>
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-md-6 col-sm-3">
                 <a class="image" href="cloudiness.html">
-                  <img class="image" src="../Resources/assets/images/Fig3.png" alt="Cloudiness">
+                  <img class="image" src="Resources/assets/images/Fig3.png" alt="Cloudiness">
                 </a>
               </div>
               <div class="col-md-6 col-sm-3">
                 <a class="image" href="windspeed.html">
-                  <img class="image" src="../Resources/assets/images/Fig4.png" alt="Wind_Speed">
+                  <img class="image" src="Resources/assets/images/Fig4.png" alt="Wind_Speed">
                 </a>
               </div>
             </div>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weather Comparison</title>
+  <title>Temperature Dashboard</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -53,50 +53,55 @@
   <!-- Main Body -->
   <div class="container mainbody">
     <div class="row">
-      <div class="col-12">
+      <div class="col-lg-8 col-md-12">
         <div class="section">
-          <h1>Comparison: Lattitude X</h1>
+          <h1>Summary: Latitude vs. Temperature</h1>
           <hr>
-          <p>Click any plot to get an in depth analysis</p>
+          <img class="plot-image" src="Resources/assets/images/Fig1.png" alt="Max_Temp">
+          <p>As expected, cities closer to the equator have a higher temperature, however it is 
+            interesting to note that distance from the equater has a bigger effect on the Southern 
+            than Northern Hemisphere. Cities with a latitude between 40 to 60 degrees are significnatly 
+            colder than cities with a latitude between -40 to -60.
+          </p>
+        </div>
+      </div>
 
+<!-- Visualizations side navigation -->
+      <div class="col-lg-4 col-md-12">
+        <div class="section">
+          <h1>Visualizations</h1>
+          <hr>
           <div class="container">
-                <div class="row" style="padding-bottom: 30px;">
-                  <div class="col-md-6 col-sm-3">
-                      <h4>vs. Max Temperature</h4>
-                    <a class="image" href="tempurature.html">
-                      <img class="image" src="../Resources/assets/images/Fig1.png" alt="Max_Temp">
-                    </a>
-                  </div>
-                  <div class="col-md-6 col-sm-3">
-                        <h4>vs. Humidity</h4>
-                    <a class="image" href="humidity.html">
-                      <img class="image" src="../Resources/assets/images/Fig2.png" alt="Humidity">
-                    </a>
-                  </div>
-                </div>
-                <div class="row" style="padding-bottom: 30px;">
-                  <div class="col-md-6 col-sm-3">
-                        <h4>vs. Cloudiness</h4>
-                    <a class="image" href="cloudiness.html">
-                      <img class="image" src="../Resources/assets/images/Fig3.png" alt="Cloudiness">
-                    </a>
-                  </div>
-                  <div class="col-md-6 col-sm-3">
-                        <h4>vs. Wind Speed</h4>
-                    <a class="image" href="windspeed.html">
-                      <img class="image" src="../Resources/assets/images/Fig4.png" alt="Wind_Speed">
-                    </a>
-                  </div>
-                </div>
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-md-6 col-sm-3">
+                <a class="image" href="tempurature.html">
+                  <img class="image" src="Resources/assets/images/Fig1.png" alt="Max_Temp">
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-3">
+                <a class="image" href="humidity.html">
+                  <img class="image" src="Resources/assets/images/Fig2.png" alt="Humidity">
+                </a>
+              </div>
+            </div>
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-md-6 col-sm-3">
+                <a class="image" href="cloudiness.html">
+                  <img class="image" src="Resources/assets/images/Fig3.png" alt="Cloudiness">
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-3">
+                <a class="image" href="windspeed.html">
+                  <img class="image" src="Resources/assets/images/Fig4.png" alt="Wind_Speed">
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-
-        </div>
-      </div>
 
   <!-- Footer -->
   <footer>

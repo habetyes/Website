@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weather Dashboard</title>
+  <title>Weather Comparison</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -53,57 +53,50 @@
   <!-- Main Body -->
   <div class="container mainbody">
     <div class="row">
-      <div class="col-lg-8 col-md-12">
+      <div class="col-12">
         <div class="section">
-          <h1>Summary: Latitude vs. X</h1>
+          <h1>Comparison: Lattitude vs. X</h1>
           <hr>
-          <img class="float-left body-image" src="../Resources/assets/images/Fig1.png" alt="Max_Temp">
-          <p>The purpose of this project was to analyze the effect that latiutude had on weather. To accomplish this task
-            I leveraged the OpenWeatherMap API to acquire a dataset containing 500 cities. 
-          </p>
-          <p>After assembling the dataset, I used Matplotlib to plot various aspects of the weather vs latutude. Factors looked at include:
-            Temperature, Cloudiness, Wind Speed and Humidity. This site provides the source data and visualizations created as part of the analysis, 
-            as well as explanations and descriptions of any trends and correlations witnessed.
-          </p>
-        </div>
-      </div>
+          <p>Click any plot to get an in depth analysis</p>
 
-<!-- Visualizations side navigation -->
-      <div class="col-lg-4 col-md-12">
-        <div class="section">
-          <h1>Visualizations</h1>
-          <hr>
           <div class="container">
-            <div class="row" style="padding-bottom: 30px;">
-              <div class="col-md-6 col-sm-3">
-                <a class="image" href="tempurature.html">
-                  <img class="image" src="../Resources/assets/images/Fig1.png" alt="Max_Temp">
-                </a>
-              </div>
-              <div class="col-md-6 col-sm-3">
-                <a class="image" href="humidity.html">
-                  <img class="image" src="../Resources/assets/images/Fig2.png" alt="Humidity">
-                </a>
-              </div>
-            </div>
-            <div class="row" style="padding-bottom: 30px;">
-              <div class="col-md-6 col-sm-3">
-                <a class="image" href="cloudiness.html">
-                  <img class="image" src="../Resources/assets/images/Fig3.png" alt="Cloudiness">
-                </a>
-              </div>
-              <div class="col-md-6 col-sm-3">
-                <a class="image" href="windspeed.html">
-                  <img class="image" src="../Resources/assets/images/Fig4.png" alt="Wind_Speed">
-                </a>
+                <div class="row" style="padding-bottom: 30px;">
+                  <div class="col-md-6 col-sm-3">
+                      <h4>vs. Max Temperature</h4>
+                    <a class="image" href="tempurature.html">
+                      <img class="image" src="Resources/assets/images/Fig1.png" alt="Max_Temp">
+                    </a>
+                  </div>
+                  <div class="col-md-6 col-sm-3">
+                        <h4>vs. Humidity</h4>
+                    <a class="image" href="humidity.html">
+                      <img class="image" src="Resources/assets/images/Fig2.png" alt="Humidity">
+                    </a>
+                  </div>
+                </div>
+                <div class="row" style="padding-bottom: 30px;">
+                  <div class="col-md-6 col-sm-3">
+                        <h4>vs. Cloudiness</h4>
+                    <a class="image" href="cloudiness.html">
+                      <img class="image" src="Resources/assets/images/Fig3.png" alt="Cloudiness">
+                    </a>
+                  </div>
+                  <div class="col-md-6 col-sm-3">
+                        <h4>vs. Wind Speed</h4>
+                    <a class="image" href="windspeed.html">
+                      <img class="image" src="Resources/assets/images/Fig4.png" alt="Wind_Speed">
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
+
+        </div>
+      </div>
 
   <!-- Footer -->
   <footer>
