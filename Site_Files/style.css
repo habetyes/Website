@@ -11,17 +11,13 @@ a.nav-link:hover{
     background-color: turquoise;
 }
 
-.background{
+.mainbody{
+    padding-top: 20px;
     background-color: rgb(241, 243, 245)
 }
 
-.mainbody{
-    padding-top: 20px;
-    background-color: white
-}
-
 .image{
-    max-width:50%;
+    max-width:100%;
     background: white;
     border: 1px solid aqua transparent;
     height:auto;
@@ -36,3 +32,50 @@ h1{
     color: aqua;
     font-weight: Bold;
 }
+
+.section {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    padding: 10px 20px 15px; 
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255); 
+  }
+
+.body-image{
+    width:50% !important;
+    height:50% !important;
+}
+
+.footer{
+    background-color: rgb(59, 60, 61);
+    color:rgb(216, 200, 200);
+    position: fixed;
+    min-height: 40px;
+    font-size: 15px; 
+    text-align: center;
+    text-emphasis: bold;
+    width: 100%;
+    bottom: 0;  
+    padding-top: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4{
+    text-align: center;
+    color: rgb(4, 117, 117)
+}
+
+.plot-image{
+    width:100% !important;
+    height:100% !important;
+}
+
+table{
+    margin-right: 10px;
+}
+
+@media (max-width: 991px){
+    .navbar-expand-lg{
+        background-color: aqua!important
+    }
+} 
